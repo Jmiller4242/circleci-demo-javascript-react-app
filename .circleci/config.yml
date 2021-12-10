@@ -12,3 +12,10 @@ jobs:
     steps:
       - checkout
       - run: node --version
+  
+  test:
+    docker:
+      - image:  cimg/node:17.2.0     
+    steps:
+      - checkout
+      - run: node --version
